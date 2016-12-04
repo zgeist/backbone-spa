@@ -1,0 +1,7 @@
+<ul class="top-menu-nav">
+    <% for(var item in menuItems) { %>
+    <li class="<%= menuItems[item].active ? 'active' : '' %>">
+        <a href="/<%= menuItems[item].slug %>" id="<%= menuItems[item].id %>"><%= menuItems[item].title %></a>
+    </li>
+    <% } %>
+</ul>

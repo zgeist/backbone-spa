@@ -1,0 +1,40 @@
+@import "kouto-swiss";
+@import "vars";
+
+ks-normalize();
+
+html
+  height 100%
+
+body
+  height 100%
+
+.container
+  display flex
+  flex-flow row wrap
+  align-items flex-start
+  justify-content flex-start
+  align-content stretch
+  flex-wrap nowrap
+  flex-direction row
+  min-height 100%
+
+  > *
+    align-self stretch
+    flex 0 1 auto
+
+  .main-content
+    flex 0 1 85%
+
+  .side-menu
+    background lighten($color__main, 20%)
+    flex 0 1 15%
+
+  .top-menu
+    background lighten($color__main, 25%)
+    padding 0 15px
+
+  ul
+    list-style none
+    padding 0
+    margin 0

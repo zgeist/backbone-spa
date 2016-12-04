@@ -1,0 +1,6 @@
+<% for(var item in content ) { %>
+<div class="collapse-item <%= (content[item].toggle ? 'opened' : '') %>">
+    <h3 class="collapse-title" id="<%= content[item].id %>"><%= content[item].title %></h3>
+    <div class="collapse-body"><%= content[item].body %></div>
+</div>
+<% } %>

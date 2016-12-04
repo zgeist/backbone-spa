@@ -1,0 +1,18 @@
+@import "../../assets/styl/vars";
+
+.side-menu
+  &-nav
+    li
+      a
+        display block
+        color #fff
+        text-decoration none
+        padding 10px
+        transition all 230ms ease-out
+
+      &.active
+        a
+          background lighten($color__main, 10%)
+      &:hover
+        a
+          background lighten($color__main, 15%)
