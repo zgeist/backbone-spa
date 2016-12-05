@@ -1,6 +1,6 @@
-import Page from "../app/views/Page"
-import TabsView from "../app/views/Tabs";
-import MenuView from "../app/views/SideMenu";
+import Page from "../app/components/Page"
+import TabsView from "../app/components/Tabs";
+import MenuView from "../app/components/SideMenu";
 
 describe('Top side menu view', function(){
     var tabsView, page;

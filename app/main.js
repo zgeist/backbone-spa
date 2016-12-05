@@ -1,6 +1,6 @@
 import Backbone from "backbone"
 import Router from "./router/router"
-import Page from "./views/Page"
+import Page from "./components/Page"
 
 import "./assets/styl/main.styl"
 

@@ -1,5 +1,5 @@
-import MenuModel from "../app/views/SideMenu/model";
-import AccordionModel from "../app/views/Accordion/model";
+import MenuModel from "../app/components/SideMenu/model";
+import AccordionModel from "../app/components/Accordion/model";
 
 describe( 'Side menu model', function(){
     var menuModel;

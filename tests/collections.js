@@ -1,6 +1,6 @@
-import AccordionCollection from "../app/views/Accordion/collection.js"
-import TabsCollection from "../app/views/Tabs/collection.js"
-import MenuCollection from "../app/views/SideMenu/collection.js"
+import AccordionCollection from "../app/components/Accordion/collection.js"
+import TabsCollection from "../app/components/Tabs/collection.js"
+import MenuCollection from "../app/components/SideMenu/collection.js"
 
 describe('Accordion Collection', function(){
     var accourdionCollection;
