@@ -4,7 +4,7 @@ export default Model.extend({
     defaults: {
         toggle: false
     },
-    toggleState(){
-        this.set( 'toggle', !this.get('toggle') );
+    toggleState( state ){
+        this.set( 'toggle', state != undefined ? state : !this.get('toggle') );
     }
 })

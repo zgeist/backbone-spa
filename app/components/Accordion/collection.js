@@ -15,9 +15,7 @@ export default Collection.extend({
                 this.reset( this.DataStorage.getContent( this.parent ) )
             }
 
-            if( eventObj.query ){
-                this.setDefaults( eventObj.query )
-            }
+            this.setDefaults( eventObj.query )
         } )
     },
     setToggle( id ){
@@ -27,8 +25,11 @@ export default Collection.extend({
     setDefaults( query ) {
         if( query ){
             query.split(',').forEach( (id) => this.get(id) ? this.get(id).toggleState() : null );
-            this.reset(this.models);
+        } else {
+            this.each( (model) => model.toggleState(false) );
         }
+
+        this.reset(this.models);
     },
     getAllOpened(){
         return _.pluck( this.where( {
